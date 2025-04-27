@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+[data-tauri-drag-region] {
+  z-index: 9999 !important;
+  -webkit-app-region: drag;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Bricolage Grotesque";
+}
+
+:not(input):not(textarea):not([contenteditable="true"]) {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.bg {
+  background: #091f39;
+}
+  
+.frame-text {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #e4e4e499;
+}
+
+.frame-version-text {
+  margin-left: 5px;
+}
+
+.frame-players-text {
+  margin-top: -5px;
+}
