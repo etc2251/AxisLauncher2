@@ -1,5 +1,5 @@
 import axios from "axios";
 
-export function getPlayers() {
-    
+export async function getPlayers() {
+    const req = await axios.get("")
 }
