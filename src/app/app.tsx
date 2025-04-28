@@ -23,7 +23,7 @@ if (isUpdating) {
       <main className="min-h-screen min-w-full bg">
       <Frame />
       <Routes>
-          <Route path="/update" element={<Updater setIsUpdating={setIsUpdating} />} />
+          <Route path="/update" element={<Prepare setIsUpdating={setIsUpdating} />} />
           <Route path="*" element={<Navigate to="/update" />} />
       </Routes>
       </main>
@@ -39,7 +39,7 @@ if (isUpdating) {
   );
 }
 
-export const Updater: React.FC<{ setIsUpdating: React.Dispatch<React.SetStateAction<boolean>> }> = ({ setIsUpdating }) => {
+export const Prepare: React.FC<{ setIsUpdating: React.Dispatch<React.SetStateAction<boolean>> }> = ({ setIsUpdating }) => {
   const [status, setStatus] = useState<string>("");
   const [subStatus, setSubStatus] = useState<string>("");
   const nav = useNavigate();
@@ -52,7 +52,7 @@ export const Updater: React.FC<{ setIsUpdating: React.Dispatch<React.SetStateAct
       await new Promise((resolve) => setTimeout(resolve, 4000));
       nav("/");
     } catch (error) {
-      console.error("Update failed", error);
+      console.error("failed", error);
     } finally {
       setIsUpdating(false);
       nav("/");
