@@ -1,3 +1,5 @@
+# THIS PROJECT DOES NOT GET UPDATED OFTEN, THE LAUNCHER IS NOT FULLY COMPLETE. THIS MESSAGE WILL BE REMOVED UPON COMPLETION OF THE LAUNCHER
+
 # AxisLauncher
 AxisLauncher is a Tauri Application created to help you have a starting point with your OG Fortnite launcher.
 
